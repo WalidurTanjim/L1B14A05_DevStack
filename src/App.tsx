@@ -6,9 +6,11 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      {/* navbar */}
+      {/* Navigation Bar Component */}
       <Navbar />
+
       <main className="flex-1">
+        {/* Banner Component */}
         <Banner />
         <TechSection />
       </main>
