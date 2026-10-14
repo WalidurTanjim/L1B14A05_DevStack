@@ -1,11 +1,17 @@
-import './App.css'
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import TechSection from './components/TechSection';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <h1>L1B14A05_DevStack</h1>
-    </>
-  )
+    <div className="min-h-screen flex flex-col bg-white">
+      <Navbar />
+      <main className="flex-1">
+        <Banner />
+        <TechSection />
+      </main>
+      <Footer />
+    </div>
+  );
 }
-
-export default App

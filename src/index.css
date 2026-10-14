@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+/* ===========================
+   BRAND GRADIENT — change ONE line to re-theme the whole site
+   =========================== */
+:root {
+  --brand-gradient: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+  --brand-gradient-deg: 90deg;
+  --brand-from: #f97316;
+  --brand-mid: #ec4899;
+  --brand-to: #8b5cf6;
+}
+
+/* Utility: gradient text */
+.gradient-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Utility: gradient background (buttons) */
+.gradient-bg {
+  background: var(--brand-gradient);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ec4899;
+  border-radius: 3px;
+}
