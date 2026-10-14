@@ -12,6 +12,8 @@ export default function App() {
       <main className="flex-1">
         {/* Banner Component */}
         <Banner />
+        
+        {/* Tech Section Component */}
         <TechSection />
       </main>
       <Footer />
