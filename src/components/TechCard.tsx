@@ -55,7 +55,7 @@ export default function TechCard({ tech, isAdded, onAdd }: TechCardProps) {
         </span>
       </div>
 
-      {/* Name */}
+      {/* Name "this is tech name" */}
       <h3 className="text-base font-bold text-gray-900">{tech.name}</h3>
 
       {/* Description */}
