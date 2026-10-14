@@ -29,23 +29,23 @@ export default function TechSection() {
 
   const handleAdd = (tech: Technology) => {
     if (stack.find((t) => t.id === tech.id)) {
-      toast.warning(`${tech.name} is already in your stack!`, { icon: '⚠️' });
+      toast.warning(`${tech.name} is already in your stack!`);
       return;
     }
     setStack((prev) => [...prev, tech]);
-    toast.success(`${tech.name} added to your stack!`, { icon: '✅' });
+    toast.success(`${tech.name} added to your stack!`);
   };
 
   const handleRemove = (id: string) => {
     const tech = stack.find((t) => t.id === id);
     setStack((prev) => prev.filter((t) => t.id !== id));
-    if (tech) toast.info(`${tech.name} removed from your stack.`, { icon: '🗑️' });
+    if (tech) toast.info(`${tech.name} removed from your stack.`);
   };
 
   const handleRemoveAll = () => {
     if (stack.length === 0) return;
     setStack([]);
-    toast.error('All technologies removed from your stack.', { icon: '🧹' });
+    toast.error('All technologies removed from your stack.');
   };
 
   const isAdded = (id: string) => !!stack.find((t) => t.id === id);

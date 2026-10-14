@@ -91,7 +91,7 @@ L1B14A05_DevStack/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/L1B14A05_DevStack.git
+git clone https://github.com/WalidurTanjim/L1B14A05_DevStack.git
 
 # 2. Navigate into the project directory
 cd L1B14A05_DevStack
@@ -103,7 +103,7 @@ npm install
 npm run dev
 ```
 
-The app will be available at **http://localhost:5173**
+The app will be available at **https://taupe-selkie-a4d88e.netlify.app/**
 
 ### Other Scripts
 
