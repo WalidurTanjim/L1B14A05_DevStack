@@ -82,8 +82,8 @@ export default function TechSection() {
                   key={tech.id}
                   tech={tech}
                   isAdded={isAdded(tech.id)}
-                  onAdd={handleAdd}
-                />
+                  onAdd={handleAdd} 
+                  />
               ))}
             </div>
           </div>
